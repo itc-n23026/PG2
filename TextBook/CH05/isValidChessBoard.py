@@ -43,7 +43,6 @@ def is_valid_chess_board(board):
 
     return piece_count['bking'] == 1 and piece_count['wking'] == 1
 
-# ユーザーから辞書を入力として受け取る方法
 input_str = input("チェス盤の状態を辞書形式で入力してください: ")
 try:
     chess_board = ast.literal_eval(input_str)
