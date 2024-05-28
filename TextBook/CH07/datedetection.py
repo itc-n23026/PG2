@@ -18,7 +18,7 @@ def is_valid_date(day, month, year):
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        month_days[1] = 29  # 2月は29日
+        month_days[1] = 29
     
     return 1 <= month <= 12 and 1 <= day <= month_days[month - 1]
 
