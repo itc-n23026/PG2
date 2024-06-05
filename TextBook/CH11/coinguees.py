@@ -13,7 +13,7 @@ else:
     print('はずれ！もう一回当てて！')
     guess = input()
     
-    toss = '表' if random.randint(0, 1) == 0 else '裏' # はずれの場合、再度  トスを行う
+    toss = '表' if random.randint(0, 1) == 0 else '裏' # はずれの場合、再度トスを行う
 
     if toss == guess:
         print('当たり！')
